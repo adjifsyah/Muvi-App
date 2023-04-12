@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C09A0E791F35E8FB9DAD5401 /* Pods_Muvi_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387B008C4520640715B083C /* Pods_Muvi_App.framework */; };
 		CF6B054B29E6AD160058BDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B054A29E6AD160058BDD3 /* AppDelegate.swift */; };
 		CF6B054D29E6AD160058BDD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B054C29E6AD160058BDD3 /* SceneDelegate.swift */; };
 		CF6B054F29E6AD160058BDD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B054E29E6AD160058BDD3 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760BE379423D645B752CFEBB /* Pods-Muvi-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muvi-App.release.xcconfig"; path = "Target Support Files/Pods-Muvi-App/Pods-Muvi-App.release.xcconfig"; sourceTree = "<group>"; };
+		A387B008C4520640715B083C /* Pods_Muvi_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muvi_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6B054729E6AD160058BDD3 /* Muvi-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muvi-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6B054A29E6AD160058BDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF6B054C29E6AD160058BDD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CF6B055329E6AD180058BDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF6B055629E6AD180058BDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6B055829E6AD180058BDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFBEBAA71B98220813F4B52 /* Pods-Muvi-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muvi-App.debug.xcconfig"; path = "Target Support Files/Pods-Muvi-App/Pods-Muvi-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09A0E791F35E8FB9DAD5401 /* Pods_Muvi_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C2A09701514B826D0B38A71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCFBEBAA71B98220813F4B52 /* Pods-Muvi-App.debug.xcconfig */,
+				760BE379423D645B752CFEBB /* Pods-Muvi-App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		786D175F8EF48150CA2C281F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A387B008C4520640715B083C /* Pods_Muvi_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF6B053E29E6AD160058BDD3 = {
 			isa = PBXGroup;
 			children = (
 				CF6B054929E6AD160058BDD3 /* Muvi-App */,
 				CF6B054829E6AD160058BDD3 /* Products */,
+				4C2A09701514B826D0B38A71 /* Pods */,
+				786D175F8EF48150CA2C281F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,47 @@
 		CF6B054929E6AD160058BDD3 /* Muvi-App */ = {
 			isa = PBXGroup;
 			children = (
-				CF6B054A29E6AD160058BDD3 /* AppDelegate.swift */,
-				CF6B054C29E6AD160058BDD3 /* SceneDelegate.swift */,
+				CF6B056129E6AD5B0058BDD3 /* App */,
+				CF6B055F29E6AD3D0058BDD3 /* DataManager */,
+				CF6B056229E6B12A0058BDD3 /* Modular */,
+				CF6B056029E6AD490058BDD3 /* SupportingFiles */,
+			);
+			path = "Muvi-App";
+			sourceTree = "<group>";
+		};
+		CF6B055F29E6AD3D0058BDD3 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		CF6B056029E6AD490058BDD3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				CF6B054E29E6AD160058BDD3 /* ViewController.swift */,
 				CF6B055029E6AD160058BDD3 /* Main.storyboard */,
 				CF6B055329E6AD180058BDD3 /* Assets.xcassets */,
 				CF6B055529E6AD180058BDD3 /* LaunchScreen.storyboard */,
 				CF6B055829E6AD180058BDD3 /* Info.plist */,
 			);
-			path = "Muvi-App";
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CF6B056129E6AD5B0058BDD3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B054A29E6AD160058BDD3 /* AppDelegate.swift */,
+				CF6B054C29E6AD160058BDD3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CF6B056229E6B12A0058BDD3 /* Modular */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modular;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF6B055B29E6AD180058BDD3 /* Build configuration list for PBXNativeTarget "Muvi-App" */;
 			buildPhases = (
+				C3E67192B630ADD1410C0FDD /* [CP] Check Pods Manifest.lock */,
 				CF6B054329E6AD160058BDD3 /* Sources */,
 				CF6B054429E6AD160058BDD3 /* Frameworks */,
 				CF6B054529E6AD160058BDD3 /* Resources */,
@@ -132,6 +190,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3E67192B630ADD1410C0FDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Muvi-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF6B054329E6AD160058BDD3 /* Sources */ = {
@@ -282,6 +365,7 @@
 		};
 		CF6B055C29E6AD180058BDD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFBEBAA71B98220813F4B52 /* Pods-Muvi-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2SLCA5Q65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Muvi-App/Info.plist";
+				INFOPLIST_FILE = "Muvi-App/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,6 +394,7 @@
 		};
 		CF6B055D29E6AD180058BDD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760BE379423D645B752CFEBB /* Pods-Muvi-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,7 +402,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2SLCA5Q65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Muvi-App/Info.plist";
+				INFOPLIST_FILE = "Muvi-App/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
