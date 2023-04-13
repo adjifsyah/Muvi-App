@@ -14,6 +14,18 @@
 		CF6B055229E6AD160058BDD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6B055029E6AD160058BDD3 /* Main.storyboard */; };
 		CF6B055429E6AD180058BDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6B055329E6AD180058BDD3 /* Assets.xcassets */; };
 		CF6B055729E6AD180058BDD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6B055529E6AD180058BDD3 /* LaunchScreen.storyboard */; };
+		CF6B056729E6F6020058BDD3 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B056629E6F6020058BDD3 /* MovieListModel.swift */; };
+		CF820DB329E7452200FBBB29 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF820DB129E7452200FBBB29 /* HomePageVC.swift */; };
+		CF820DB429E7452200FBBB29 /* HomePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF820DB229E7452200FBBB29 /* HomePageVC.xib */; };
+		CF820DBD29E749EB00FBBB29 /* BannerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF820DBB29E749EB00FBBB29 /* BannerListCell.swift */; };
+		CF820DBE29E749EB00FBBB29 /* BannerListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF820DBC29E749EB00FBBB29 /* BannerListCell.xib */; };
+		CF820DC129E74B8200FBBB29 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF820DBF29E74B8200FBBB29 /* BannerCell.swift */; };
+		CF820DC229E74B8200FBBB29 /* BannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF820DC029E74B8200FBBB29 /* BannerCell.xib */; };
+		CF820DC529E74C5E00FBBB29 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF820DC329E74C5E00FBBB29 /* CardViewCell.swift */; };
+		CF820DC629E74C5E00FBBB29 /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF820DC429E74C5E00FBBB29 /* CardViewCell.xib */; };
+		CF820DC929E74DB100FBBB29 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF820DC829E74DAD00FBBB29 /* SF-Pro-Text-Bold.otf */; };
+		CF820DCC29E7511300FBBB29 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF820DCA29E7511300FBBB29 /* CardCell.swift */; };
+		CF820DCD29E7511300FBBB29 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF820DCB29E7511300FBBB29 /* CardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +39,18 @@
 		CF6B055329E6AD180058BDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF6B055629E6AD180058BDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6B055829E6AD180058BDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6B056629E6F6020058BDD3 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
+		CF820DB129E7452200FBBB29 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		CF820DB229E7452200FBBB29 /* HomePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageVC.xib; sourceTree = "<group>"; };
+		CF820DBB29E749EB00FBBB29 /* BannerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerListCell.swift; sourceTree = "<group>"; };
+		CF820DBC29E749EB00FBBB29 /* BannerListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerListCell.xib; sourceTree = "<group>"; };
+		CF820DBF29E74B8200FBBB29 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		CF820DC029E74B8200FBBB29 /* BannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCell.xib; sourceTree = "<group>"; };
+		CF820DC329E74C5E00FBBB29 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		CF820DC429E74C5E00FBBB29 /* CardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
+		CF820DC829E74DAD00FBBB29 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		CF820DCA29E7511300FBBB29 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		CF820DCB29E7511300FBBB29 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		FCFBEBAA71B98220813F4B52 /* Pods-Muvi-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muvi-App.debug.xcconfig"; path = "Target Support Files/Pods-Muvi-App/Pods-Muvi-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +72,6 @@
 				FCFBEBAA71B98220813F4B52 /* Pods-Muvi-App.debug.xcconfig */,
 				760BE379423D645B752CFEBB /* Pods-Muvi-App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,23 +105,27 @@
 			isa = PBXGroup;
 			children = (
 				CF6B056129E6AD5B0058BDD3 /* App */,
-				CF6B055F29E6AD3D0058BDD3 /* DataManager */,
-				CF6B056229E6B12A0058BDD3 /* Modular */,
+				CF6B055F29E6AD3D0058BDD3 /* Presentation */,
+				CF6B056229E6B12A0058BDD3 /* Data */,
+				CF6B056329E6D17E0058BDD3 /* Domain */,
 				CF6B056029E6AD490058BDD3 /* SupportingFiles */,
 			);
 			path = "Muvi-App";
 			sourceTree = "<group>";
 		};
-		CF6B055F29E6AD3D0058BDD3 /* DataManager */ = {
+		CF6B055F29E6AD3D0058BDD3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF6B056529E6D4690058BDD3 /* View */,
+				CF6B056429E6D4500058BDD3 /* ViewModel */,
 			);
-			path = DataManager;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		CF6B056029E6AD490058BDD3 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				CF820DC729E74D6400FBBB29 /* Font */,
 				CF6B054E29E6AD160058BDD3 /* ViewController.swift */,
 				CF6B055029E6AD160058BDD3 /* Main.storyboard */,
 				CF6B055329E6AD180058BDD3 /* Assets.xcassets */,
@@ -117,11 +144,75 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		CF6B056229E6B12A0058BDD3 /* Modular */ = {
+		CF6B056229E6B12A0058BDD3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Modular;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CF6B056329E6D17E0058BDD3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B056629E6F6020058BDD3 /* MovieListModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CF6B056429E6D4500058BDD3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF6B056529E6D4690058BDD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF820DAF29E744FE00FBBB29 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF820DAF29E744FE00FBBB29 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF820DB129E7452200FBBB29 /* HomePageVC.swift */,
+				CF820DB229E7452200FBBB29 /* HomePageVC.xib */,
+				CF820DB929E7499D00FBBB29 /* TableCell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CF820DB929E7499D00FBBB29 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF820DBB29E749EB00FBBB29 /* BannerListCell.swift */,
+				CF820DBC29E749EB00FBBB29 /* BannerListCell.xib */,
+				CF820DC329E74C5E00FBBB29 /* CardViewCell.swift */,
+				CF820DC429E74C5E00FBBB29 /* CardViewCell.xib */,
+				CF820DBA29E749AC00FBBB29 /* CollectionCell */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		CF820DBA29E749AC00FBBB29 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF820DBF29E74B8200FBBB29 /* BannerCell.swift */,
+				CF820DC029E74B8200FBBB29 /* BannerCell.xib */,
+				CF820DCA29E7511300FBBB29 /* CardCell.swift */,
+				CF820DCB29E7511300FBBB29 /* CardCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		CF820DC729E74D6400FBBB29 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CF820DC829E74DAD00FBBB29 /* SF-Pro-Text-Bold.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +226,7 @@
 				CF6B054329E6AD160058BDD3 /* Sources */,
 				CF6B054429E6AD160058BDD3 /* Frameworks */,
 				CF6B054529E6AD160058BDD3 /* Resources */,
+				7EC86E77A235202B88327AB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,7 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6B055729E6AD180058BDD3 /* LaunchScreen.storyboard in Resources */,
+				CF820DC629E74C5E00FBBB29 /* CardViewCell.xib in Resources */,
+				CF820DC929E74DB100FBBB29 /* SF-Pro-Text-Bold.otf in Resources */,
+				CF820DC229E74B8200FBBB29 /* BannerCell.xib in Resources */,
 				CF6B055429E6AD180058BDD3 /* Assets.xcassets in Resources */,
+				CF820DB429E7452200FBBB29 /* HomePageVC.xib in Resources */,
+				CF820DBE29E749EB00FBBB29 /* BannerListCell.xib in Resources */,
+				CF820DCD29E7511300FBBB29 /* CardCell.xib in Resources */,
 				CF6B055229E6AD160058BDD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +290,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7EC86E77A235202B88327AB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muvi-App/Pods-Muvi-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muvi-App/Pods-Muvi-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Muvi-App/Pods-Muvi-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C3E67192B630ADD1410C0FDD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,9 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF820DC129E74B8200FBBB29 /* BannerCell.swift in Sources */,
+				CF820DB329E7452200FBBB29 /* HomePageVC.swift in Sources */,
+				CF820DC529E74C5E00FBBB29 /* CardViewCell.swift in Sources */,
+				CF6B056729E6F6020058BDD3 /* MovieListModel.swift in Sources */,
 				CF6B054F29E6AD160058BDD3 /* ViewController.swift in Sources */,
+				CF820DBD29E749EB00FBBB29 /* BannerListCell.swift in Sources */,
 				CF6B054B29E6AD160058BDD3 /* AppDelegate.swift in Sources */,
 				CF6B054D29E6AD160058BDD3 /* SceneDelegate.swift in Sources */,
+				CF820DCC29E7511300FBBB29 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
