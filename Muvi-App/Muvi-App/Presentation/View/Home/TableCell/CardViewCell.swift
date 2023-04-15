@@ -12,18 +12,22 @@ class CardViewCell: UITableViewCell {
     @IBOutlet weak var cardCollectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     private let screenSize = UIScreen.main.bounds
-    private var moviesDatasource: [RemoteMoviesModel] = []
+    private var moviesDatasource: [MoviesModel] = []
     private var idCell: String = ""
+    
+    let viewModel: HomeViewModel = HomeViewModel()
+    var navigationController: UINavigationController? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
     
-    func configure(input category: String, identifierCell: String,  dataSource: [RemoteMoviesModel]) {
+    func configure(input category: String, identifierCell: String,  dataSource: [MoviesModel]) {
         idCell = identifierCell
         setupCollectionView()
         lblMoviesCategory.text = category
-        moviesDatasource = dataSource
+        moviesDatasource = dataSource.filter { $0.posterUrlPath.contains("jpg")}
         cardCollectionView.reloadData()
     }
     
@@ -37,8 +41,6 @@ class CardViewCell: UITableViewCell {
         flowLayout.minimumLineSpacing = 8
         flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     }
-    
-    
 }
 
 extension CardViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -49,9 +51,12 @@ extension CardViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: idCell, for: indexPath) as? CardCell else { return UICollectionViewCell() }
         let movieDataSource = moviesDatasource[indexPath.row]
-        cardCell.configure(imgName: movieDataSource.backdropUrlPath)
+        cardCell.configure(imgUrlString: movieDataSource.posterUrlPath)
         return cardCell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedMovie = moviesDatasource[indexPath.row].movieId
+        viewModel.goToDetailView(by: selectedMovie, nav: navigationController!)
+    }
 }

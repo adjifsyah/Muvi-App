@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CardCell: UICollectionViewCell {
     @IBOutlet weak var vwBackground: UIView!
@@ -18,7 +19,7 @@ class CardCell: UICollectionViewCell {
     }
 
     
-    func configure(imgName: String) {
-        imgCardView.image = UIImage(named: imgName)
+    func configure(imgUrlString: String) {
+        imgCardView.sd_setImage(with: URL(string: imgUrlString), placeholderImage: UIImage(named: "imgPlaceholder"))
     }
 }

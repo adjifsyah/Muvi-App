@@ -1,9 +1,5 @@
 PODS:
   - Alamofire (5.6.2)
-  - Moya (15.0.0):
-    - Moya/Core (= 15.0.0)
-  - Moya/Core (15.0.0):
-    - Alamofire (~> 5.0)
   - ObjectMapper (3.5.3)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
@@ -11,31 +7,34 @@ PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - SDWebImage (5.13.3):
+    - SDWebImage/Core (= 5.13.3)
+  - SDWebImage/Core (5.13.3)
 
 DEPENDENCIES:
   - Alamofire
-  - Moya (~> 15.0)
   - ObjectMapper (~> 3.5)
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - Moya
     - ObjectMapper
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: af5bbffef2cde09f148d826f9733dcde1a9414cd
 
-PODFILE CHECKSUM: 8cf5bd9bd2ada0b14042bbeb0bbd2698045dae4c
+PODFILE CHECKSUM: e0d7e03f7e13187cf9c816069a6a29c69411919f
 
 COCOAPODS: 1.12.0

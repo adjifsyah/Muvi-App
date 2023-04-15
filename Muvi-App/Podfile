@@ -5,7 +5,7 @@ target 'Muvi-App' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire'
-  pod 'Moya', '~> 15.0'
+  pod 'SDWebImage', '~> 5.0'
   pod 'ObjectMapper', '~> 3.5'
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'

@@ -10,8 +10,11 @@ import UIKit
 class BannerListCell: UITableViewCell {
     @IBOutlet weak var bannerCollectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
-    private var bannerDataSource: [RemoteMoviesModel] = []
+    private var bannerDataSource: [MoviesModel] = []
     private let screenSize = UIScreen.main.bounds
+    
+    let viewModel: HomeViewModel = HomeViewModel()
+    var navigationController: UINavigationController? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,8 +32,8 @@ class BannerListCell: UITableViewCell {
         
     }
     
-    func configure(dataSource: [RemoteMoviesModel]) {
-        bannerDataSource = dataSource
+    func configure(dataSource: [MoviesModel]) {
+        bannerDataSource = dataSource.filter { $0.posterUrlPath.contains("jpg")}
         bannerCollectionView.reloadData()
     }
 
@@ -45,11 +48,13 @@ extension BannerListCell: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let bannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as? BannerCell else { return UICollectionViewCell() }
         let imgBanner = bannerDataSource[indexPath.row]
-        bannerCell.configure(imgName: imgBanner.backdropUrlPath)
+        bannerCell.configure(imgUrlString: imgBanner.posterUrlPath)
         return bannerCell
     }
     
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedMovie = bannerDataSource[indexPath.row].movieId
+        viewModel.goToDetailView(by: selectedMovie, nav: navigationController!)
+    }
     
 }

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "ef3-placeholder-image.jpg@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "ef3-placeholder-image.jpg@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "ef3-placeholder-image.jpg@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

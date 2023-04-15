@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jym-CT-i3R" customClass="MovieCardCell" customModule="Muvi_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="264"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="264"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dsy-O8-o5W">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="214"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="214" id="s4p-HP-sow"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZF-ok-rqc">
+                        <rect key="frame" x="0.0" y="222" width="160" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="DIZ-Nf-UR4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-r0-aDy">
+                        <rect key="frame" x="0.0" y="240" width="160" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="jgc-DD-VjJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="h3c-P3-Pzg"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Lcn-r0-aDy" firstAttribute="leading" secondItem="jym-CT-i3R" secondAttribute="leading" id="5zn-N4-Q5X"/>
+                <constraint firstAttribute="trailing" secondItem="4ZF-ok-rqc" secondAttribute="trailing" id="HLN-kS-3xW"/>
+                <constraint firstAttribute="trailing" secondItem="Lcn-r0-aDy" secondAttribute="trailing" id="Nhy-13-tCl"/>
+                <constraint firstItem="Lcn-r0-aDy" firstAttribute="top" secondItem="4ZF-ok-rqc" secondAttribute="bottom" constant="4" id="RrU-it-Elx"/>
+                <constraint firstItem="Dsy-O8-o5W" firstAttribute="leading" secondItem="jym-CT-i3R" secondAttribute="leading" id="Wf2-6S-AsQ"/>
+                <constraint firstItem="4ZF-ok-rqc" firstAttribute="top" secondItem="Dsy-O8-o5W" secondAttribute="bottom" constant="8" id="aLY-iq-pW5"/>
+                <constraint firstAttribute="trailing" secondItem="Dsy-O8-o5W" secondAttribute="trailing" id="bu9-7U-7hZ"/>
+                <constraint firstItem="Dsy-O8-o5W" firstAttribute="top" secondItem="jym-CT-i3R" secondAttribute="top" id="mQK-vz-RRf"/>
+                <constraint firstItem="4ZF-ok-rqc" firstAttribute="leading" secondItem="jym-CT-i3R" secondAttribute="leading" id="sp0-5B-W6W"/>
+            </constraints>
+            <size key="customSize" width="160" height="264"/>
+            <connections>
+                <outlet property="imgMovie" destination="Dsy-O8-o5W" id="4UU-0Z-Ss3"/>
+                <outlet property="lblCastMovie" destination="Lcn-r0-aDy" id="EbM-i5-G2g"/>
+                <outlet property="lblTitleMovie" destination="4ZF-ok-rqc" id="ecy-b1-YBL"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="17.605633802816904"/>
+        </collectionViewCell>
+    </objects>
+</document>

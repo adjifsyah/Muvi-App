@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCastView" customModule="Muvi_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="94W-UL-Pes">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="dLR-1l-sP9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TU-mv-fHy">
+                        <rect key="frame" x="0.0" y="106" width="90" height="28.666666666666657"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="0.70084635416666663" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2TU-mv-fHy" secondAttribute="trailing" id="TDr-na-DM5"/>
+                <constraint firstItem="2TU-mv-fHy" firstAttribute="top" secondItem="94W-UL-Pes" secondAttribute="bottom" constant="16" id="Ueh-q4-iEC"/>
+                <constraint firstItem="2TU-mv-fHy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZU8-RU-VoF"/>
+                <constraint firstItem="94W-UL-Pes" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bTV-T6-zsx"/>
+                <constraint firstAttribute="trailing" secondItem="94W-UL-Pes" secondAttribute="trailing" id="eQK-L6-qpJ"/>
+                <constraint firstItem="94W-UL-Pes" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kQG-D2-HD8"/>
+                <constraint firstAttribute="bottom" secondItem="2TU-mv-fHy" secondAttribute="bottom" priority="250" constant="16" id="vgx-LP-bHW"/>
+            </constraints>
+            <size key="customSize" width="90" height="153"/>
+            <connections>
+                <outlet property="imgCastMovie" destination="94W-UL-Pes" id="8I6-0a-zpF"/>
+                <outlet property="lblCastMovie" destination="2TU-mv-fHy" id="sr2-JB-xgz"/>
+            </connections>
+            <point key="canvasLocation" x="61.068702290076331" y="25"/>
+        </collectionViewCell>
+    </objects>
+</document>

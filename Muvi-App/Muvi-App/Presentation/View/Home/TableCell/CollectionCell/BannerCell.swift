@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class BannerCell: UICollectionViewCell {
     @IBOutlet weak var imgBanner: UIImageView!
@@ -15,8 +16,8 @@ class BannerCell: UICollectionViewCell {
 
     }
     
-    func configure(imgName: String) {
-        imgBanner.image = UIImage(named: imgName)
+    func configure(imgUrlString: String) {
+        imgBanner.sd_setImage(with: URL(string: imgUrlString), placeholderImage: UIImage(named: "imgPlaceholder"))
     }
 
 }
