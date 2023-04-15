@@ -114,6 +114,11 @@ extension FavoritePageVC: UITableViewDelegate, UITableViewDataSource {
         favoriteCell.configure(data: movieFavorite?[indexPath.row])
         return favoriteCell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedId = viewModel.movieFilter?[indexPath.row].movieId ?? 0
+        viewModel.goToDetailView(by: selectedId, nav: navigationController!)
+    }
 }
 
 

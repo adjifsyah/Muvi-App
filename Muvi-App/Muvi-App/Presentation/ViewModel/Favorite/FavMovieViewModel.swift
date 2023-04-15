@@ -5,7 +5,7 @@
 //  Created by Adji Firmansyah on 15/04/23.
 //
 
-import Foundation
+import UIKit
 
 class FavMovieViewModel {
     var detailMovie: [MoviesModel]? {
@@ -47,5 +47,11 @@ class FavMovieViewModel {
     func searchMovies(title: String, completion: @escaping () -> Void) {
         movieFilter = detailMovie?.filter{ $0.movieTitle.lowercased().contains(title.lowercased())}
         completion()
+    }
+    
+    func goToDetailView(by id: Int, nav: UINavigationController) {
+        let detailView = DetailPageVC()
+        detailView.fetchData(by: id)
+        nav.pushViewController(detailView, animated: true)
     }
 }
