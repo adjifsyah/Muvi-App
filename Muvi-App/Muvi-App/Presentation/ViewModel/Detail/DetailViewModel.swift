@@ -21,7 +21,7 @@ class DetailViewModel {
             switch result {
             case .success(let success):
                 let mapper = DetailMovies(
-                    movieGenres: success.movieGenres?.map { MovieGenres(genreId: $0.genreId ?? 0, genre: $0.genre ?? "")} ?? [],
+                    movieId: success.movieId ?? 0, movieGenres: success.movieGenres?.map { MovieGenres(genreId: $0.genreId ?? 0, genre: $0.genre ?? "")} ?? [],
                     movieTitle: success.movieTitle ?? "",
                     moviePopularity: success.moviePopularity ?? 0,
                     imgUrlPath: NetworkConstant.shared.imageServerAddress + (success.imgUrlPath ?? ""),
@@ -47,6 +47,17 @@ class DetailViewModel {
                 self.didFinishFetchCast?()
             case .failure(let error):
                 self.showAlertClosure?(error.localizedDescription)
+            }
+        }
+    }
+    
+    func retriveCoreData(completion: @escaping (Result<[MoviesModel], GeneralError>) -> Void) {
+        CoreDataManager.shared.retrieve { result in
+            switch result {
+            case .success(let success):
+                completion(.success(success))
+            case .failure(_):
+                completion(.failure(.failGetLocalData))
             }
         }
     }

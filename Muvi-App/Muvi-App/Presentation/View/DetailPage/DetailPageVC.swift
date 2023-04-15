@@ -24,6 +24,8 @@ class DetailPageVC: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var topConstraintScrollView: NSLayoutConstraint!
     
+    var isFavorite: Bool = false
+    
     var statusBarHeight: CGFloat {
         var statusBarHeight: CGFloat = 0
         let scenes = UIApplication.shared.connectedScenes
@@ -31,12 +33,6 @@ class DetailPageVC: UIViewController {
         let window = windowScene?.windows.first
         statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
         return statusBarHeight + 4
-    }
-    
-    lazy var yPoint = scrollView.contentOffset.y
-    
-    var startPointY: CGFloat {
-        scrollView.contentOffset.y
     }
     
     let viewModel: DetailViewModel = DetailViewModel()
@@ -48,9 +44,14 @@ class DetailPageVC: UIViewController {
     
     private func setupView() {
         setupBtn()
+        validateFavorite()
         createGradient()
         setupCollectionView()
         setupConstraint()
+    }
+    
+    private func validateFavorite() {
+        btnAddFavorite.setTitle(isFavorite ? "Remove from Favorite" : "Add to Favorite", for: .normal)
     }
     
     func fetchData(by id: Int) {
@@ -59,10 +60,24 @@ class DetailPageVC: UIViewController {
 
         viewModel.didFinishFetch = {
             self.configure(data: self.viewModel.detailMovie ?? nil)
+            self.fetchLocal()
+            self.validateFavorite()
         }
         
         viewModel.didFinishFetchCast = {
             self.cardCastCollection.reloadData()
+        }
+    }
+    
+    private func fetchLocal() {
+        viewModel.retriveCoreData { res in
+            switch res {
+            case .success(let success):
+                self.isFavorite = success.contains(where: ({ $0.movieTitle == self.lblTitleDetail.text}))
+                self.validateFavorite()
+            case .failure(let error):
+                print(error)
+            }
         }
     }
     
@@ -116,7 +131,37 @@ class DetailPageVC: UIViewController {
     }
     
     @IBAction func onTapAddFavorite(_ sender: UIButton) {
-        
+        isFavorite ? deleteFavorite() : saveFavorite()
+    }
+    
+    private func saveFavorite() {
+        let detailMovie = viewModel.detailMovie
+        CoreDataManager.shared.save(moviesId: detailMovie?.movieId ?? 0, moviesTitle: detailMovie?.movieTitle ?? "", overview: detailMovie?.overview ?? "", releaseDate: detailMovie?.releaseDate ?? "", backdropPath: detailMovie?.imgUrlPath ?? "", posterPath: detailMovie?.imgUrlPath ?? "") { result in
+            switch result {
+            case .success(let success):
+                let message = "Success save \(success) to favorite"
+                AlertHelper.shared.showGeneralAlert(message: message, navigationController: self.navigationController!)
+                self.fetchLocal()
+                self.validateFavorite()
+            case .failure(let failure):
+                AlertHelper.shared.showGeneralAlert(message: failure.localizedDescription, navigationController: self.navigationController!)
+            }
+        }
+    }
+    
+    private func deleteFavorite() {
+        let detailMovie = viewModel.detailMovie
+        CoreDataManager.shared.delete(detailMovie?.movieTitle ?? "") { result in
+            switch result {
+            case .success(let movieTitle):
+                let message = "Success delete \(movieTitle) from favorite"
+                AlertHelper.shared.showGeneralAlert(message: message, navigationController: self.navigationController!)
+                self.fetchLocal()
+                self.validateFavorite()
+            case .failure(let error):
+                AlertHelper.shared.showGeneralAlert(message: error.localizedDescription, navigationController: self.navigationController!)
+            }
+        }
     }
     
     @IBAction func onTapBack(_ sender: UIButton) {
@@ -136,12 +181,6 @@ extension DetailPageVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         castCell.configure(data: datasourceCast ?? nil)
         return castCell
     }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        yPoint -= scrollView.contentOffset.y
-        yPoint == imgMovieDetail.frame.height / 2 ? hideBackButton() : showBackButton()
-    }
-    
 }
 
 extension DetailPageVC {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CardLandscapeCell: UITableViewCell {
     @IBOutlet weak var lblTitleMovie: UILabel!
@@ -20,15 +21,19 @@ class CardLandscapeCell: UITableViewCell {
         
     }
     
+    func addAction(gesture: UITapGestureRecognizer) {
+        btnFavorite.addGestureRecognizer(gesture)
+    }
+    
     private func setupView() {
 
     }
     
-    func configure(data: MoviesModel) {
-        lblTitleMovie.text = data.movieTitle
-        lblReleaseDate.text = data.releaseDate
-        lblGenreMovie.text = data.posterUrlPath
-//        imgMovie.image = UIImage(named: data.posterUrlPath)
+    func configure(data: MoviesModel? = nil) {
+        lblTitleMovie.text = data?.movieTitle
+        lblReleaseDate.text = data?.releaseDate
+        lblGenreMovie.text = data?.posterUrlPath
+        imgMovie.sd_setImage(with: URL(string: data?.posterUrlPath ?? ""), placeholderImage: UIImage(named: "imgPlaceholder"))
     }
     
 }

@@ -94,8 +94,8 @@
             filePath = "Muvi-App/Presentation/View/Home/HomePageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "Muvi-App/Presentation/View/Home/HomePageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "Muvi-App/Presentation/View/Home/HomePageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "Muvi-App/Presentation/View/SearchPage/SearchPageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "fetchMovies()"
             landmarkType = "7">
             <Locations>
@@ -222,8 +222,8 @@
             filePath = "Muvi-App/Presentation/View/SearchPage/SearchPageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "fetchMovies()"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "Muvi-App/Presentation/View/SearchPage/SearchPageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,8 +254,8 @@
             filePath = "Muvi-App/Presentation/View/SearchPage/SearchPageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -272,7 +272,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "fetchMoviePopular(movieId:)"
+            landmarkName = "fetchMoviePopular(movieId:nav:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -286,8 +286,8 @@
             filePath = "Muvi-App/Presentation/View/SearchPage/SearchPageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "validateView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -302,8 +302,8 @@
             filePath = "Muvi-App/Presentation/View/SearchPage/SearchPageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -318,8 +318,8 @@
             filePath = "Muvi-App/Presentation/View/SearchPage/SearchPageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "onTapSearch()"
             landmarkType = "7">
          </BreakpointContent>
@@ -418,6 +418,262 @@
                   offsetFromSymbolStart = "200">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8377B2A3-4CF3-4E5C-8689-83AB1FCA6E84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/ViewModel/Detail/DetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchMoviePopular(movieId:nav:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8377B2A3-4CF3-4E5C-8689-83AB1FCA6E84 - e55c1514b621db0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Muvi_App.ResponseMoviesDetail, Swift.Error&gt;) -&gt; () in Muvi_App.DetailViewModel.fetchMoviePopular(movieId: Swift.Int) -&gt; ()"
+                  moduleName = "Muvi-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adjifirmansyah/Pribadi/iOS%20App/Muvi-App/Muvi-App/Muvi-App/Presentation/ViewModel/Detail/DetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "8377B2A3-4CF3-4E5C-8689-83AB1FCA6E84 - f1c44c7385913783"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Muvi_App.RemoteGenres) -&gt; Muvi_App.MovieGenres in closure #1 (Swift.Result&lt;Muvi_App.ResponseMoviesDetail, Swift.Error&gt;) -&gt; () in Muvi_App.DetailViewModel.fetchMoviePopular(movieId: Swift.Int) -&gt; ()"
+                  moduleName = "Muvi-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adjifirmansyah/Pribadi/iOS%20App/Muvi-App/Muvi-App/Muvi-App/Presentation/ViewModel/Detail/DetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB1B7845-8DFE-4922-B7EF-15177675B686"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/ViewModel/Favorite/FavoriteViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchListFavorite()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D45BF37-034A-4EAB-9080-0ADCCBE52E9A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/ViewModel/Favorite/FavoriteViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchListFavorite()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "591B9A47-BD82-4290-8495-476E8DE49C8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/ViewModel/Favorite/FavoriteViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchListFavorite()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "591B9A47-BD82-4290-8495-476E8DE49C8B - 1b8861a9d9ae9b0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Muvi_App.FavoriteViewModel.fetchListFavorite() -&gt; ()"
+                  moduleName = "Muvi-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adjifirmansyah/Pribadi/iOS%20App/Muvi-App/Muvi-App/Muvi-App/Presentation/ViewModel/Favorite/FavoriteViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "591B9A47-BD82-4290-8495-476E8DE49C8B - ebb7b434c0d7ce53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Muvi_App.MoviesModel&gt;, Swift.Error&gt;) -&gt; () in Muvi_App.FavoriteViewModel.fetchListFavorite() -&gt; ()"
+                  moduleName = "Muvi-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adjifirmansyah/Pribadi/iOS%20App/Muvi-App/Muvi-App/Muvi-App/Presentation/ViewModel/Favorite/FavoriteViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00099C78-7060-4CB9-AC02-E9289DB6E075"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/ViewModel/Favorite/FavoriteViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchListFavorite()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF18A2D1-1FFC-4262-8A83-71D04048B776"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/View/FavoritePage/FavoritePageVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19E72EE4-D873-44E0-AE1F-104CF8FB8810"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/View/DetailPage/DetailPageVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "fetchLocal()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "19E72EE4-D873-44E0-AE1F-104CF8FB8810 - 1781b041bdafc798"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Muvi_App.MoviesModel&gt;, Muvi_App.GeneralError&gt;) -&gt; () in Muvi_App.DetailPageVC.fetchLocal() -&gt; ()"
+                  moduleName = "Muvi-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adjifirmansyah/Pribadi/iOS%20App/Muvi-App/Muvi-App/Muvi-App/Presentation/View/DetailPage/DetailPageVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "19E72EE4-D873-44E0-AE1F-104CF8FB8810 - a0b2db1161607ef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Muvi_App.MoviesModel) -&gt; Swift.Bool in closure #1 (Swift.Result&lt;Swift.Array&lt;Muvi_App.MoviesModel&gt;, Muvi_App.GeneralError&gt;) -&gt; () in Muvi_App.DetailPageVC.fetchLocal() -&gt; ()"
+                  moduleName = "Muvi-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adjifirmansyah/Pribadi/iOS%20App/Muvi-App/Muvi-App/Muvi-App/Presentation/View/DetailPage/DetailPageVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2463ABF7-76F3-4ADF-A160-1BE11F7D479A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/View/DetailPage/DetailPageVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "fetchLocal()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A36E95A-33D1-47AD-B488-4B7017E81E2E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/View/DetailPage/DetailPageVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "onTapAddFavorite(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A107848E-8F97-4380-92D9-D2B3505D9424"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Muvi-App/Presentation/View/FavoritePage/FavoritePageVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "onTapSearch()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

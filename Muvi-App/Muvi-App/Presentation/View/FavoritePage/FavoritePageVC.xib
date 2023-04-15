@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritePageVC" customModule="Muvi_App" customModuleProvider="target">
             <connections>
                 <outlet property="moviesTableView" destination="tRv-i3-cku" id="L6u-m3-xiG"/>
+                <outlet property="searchToolbar" destination="Xff-jn-99c" id="H2B-I8-EqQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

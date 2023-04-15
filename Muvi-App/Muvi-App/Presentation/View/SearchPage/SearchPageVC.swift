@@ -21,6 +21,7 @@ class SearchPageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GeneralLoading.shared.showLoading(getNavigation: navigationController!)
         setupView()
     }
     
@@ -38,6 +39,7 @@ class SearchPageVC: UIViewController {
         viewModel.didFinishFetchPopular = {
             self.moviesCollectionView.reloadData()
             self.validateView()
+            GeneralLoading.shared.hideLoading(getNavigation: self.navigationController!)
         }
     }
     
@@ -131,7 +133,9 @@ extension SearchPageVC {
         
         if searchToolbar.searchTextField.text == "" {
             viewModel.movieFilter = viewModel.moviePopular
+            GeneralLoading.shared.hideLoading(getNavigation: navigationController!)
         } else {
+            GeneralLoading.shared.showLoading(getNavigation: navigationController!)
             viewModel.searchMovies(title: searchToolbar.searchTextField.text!)
         }
     }

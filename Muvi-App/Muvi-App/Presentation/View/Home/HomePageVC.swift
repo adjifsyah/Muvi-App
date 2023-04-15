@@ -18,15 +18,16 @@ class HomePageVC: UIViewController {
     }
     
     private func setupView() {
+        GeneralLoading.shared.showLoading(getNavigation: navigationController!)
         fetchData()
         setupTableView()
+        
     }
     
     private func fetchData() {
         viewModel.fetchBanner()
         viewModel.fetchPopular()
         viewModel.fetchComingSoon()
-        
     }
     
     private func setupTableView() {
@@ -61,6 +62,7 @@ extension HomePageVC: UITableViewDelegate, UITableViewDataSource {
                 bannerCell.configure(dataSource: self.viewModel.movieBanner ?? [])
             }
             bannerCell.navigationController = navigationController!
+            GeneralLoading.shared.hideLoading(getNavigation: navigationController!)
             return bannerCell
         case 1:
             viewModel.didFinishFetchPopular = {

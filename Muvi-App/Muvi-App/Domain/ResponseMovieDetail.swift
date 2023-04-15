@@ -9,6 +9,7 @@ import Foundation
 import ObjectMapper
 
 class ResponseMoviesDetail: Mappable {
+    var movieId: Int?
     var movieGenres: [RemoteGenres]?
     var movieTitle: String?
     var moviePopularity: Double?
@@ -19,6 +20,7 @@ class ResponseMoviesDetail: Mappable {
     required init?(map: Map) { }
     
     func mapping(map: ObjectMapper.Map) {
+        movieId <- map["id"]
         movieGenres  <-  map["genres"]
         movieTitle  <-  map["original_title"]
         moviePopularity  <-  map["popularity"]
@@ -41,6 +43,7 @@ class RemoteGenres: Mappable {
 }
 
 struct DetailMovies {
+    let movieId: Int
     let movieGenres: [MovieGenres]
     let movieTitle: String
     let moviePopularity: Double

@@ -39,13 +39,13 @@ class CustomTabbar: UITabBarController , UITabBarControllerDelegate{
         let favoriteTabbar = UITabBarItem(title: "", image: UIImage(named: "tabFavorite"), tag: 3)
         favoritePage.tabBarItem = favoriteTabbar
         
-        let profilePage = UIViewController()
+        let profilePage = ViewController()
         let profileNavigation = UINavigationController(rootViewController: profilePage)
         profileNavigation.isNavigationBarHidden = true
         let profileTabbar = UITabBarItem(title: "", image: UIImage(named: "tabProfile"), tag: 4)
         profilePage.tabBarItem = profileTabbar
         
-        self.viewControllers = [homeNavigation, searchNavigation,favoriteNavigation, profileNavigation]
+        self.viewControllers = [homeNavigation, searchNavigation, favoriteNavigation, profileNavigation]
         
     }
     
